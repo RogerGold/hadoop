@@ -47,7 +47,7 @@ ssh 必须安装并且保证 sshd一直运行，以便用Hadoop 脚本管理远�
 
 打开conf/hadoop-env.sh文件，设置JAVA_HOME：
 
-
+!(java home)[https://github.com/RogerGold/media/blob/master/java_home_env.png]
 ### 伪分布式模式的操作方法
 配置conf/core-site.xml:
   
@@ -93,7 +93,7 @@ Hadoop守护进程的日志写入到 ${HADOOP_LOG_DIR} 目录 (默认是 ${HADOO
 浏览NameNode的网络接口，它的地址默认为：http://localhost:9870/
 
 启动完成后，可以通过命令 jps 来判断是否成功启动，若成功启动则会列出如下进程: “NameNode”、”DataNode” 和 “SecondaryNameNode”（如果 SecondaryNameNode 没有启动，请运行 sbin/stop-dfs.sh 关闭进程，然后再次尝试启动尝试）。
-
+!(jsp)[https://github.com/RogerGold/media/blob/master/JPS.png]
 如果没有 NameNode 或 DataNode ，那就是配置不成功，请仔细检查之前步骤，或通过查看启动日志排查原因。
 
 下次启动 hadoop 时，无需进行 NameNode 的初始化，只需要运行 ./sbin/start-dfs.sh 就可以。
