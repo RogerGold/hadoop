@@ -17,7 +17,7 @@ Hadoop的框架最核心的设计就是：HDFS和MapReduce。HDFS为海量的数
    $ sudo apt-get install oracle-java8-installer
    $ sudo apt-get install oracle-java8-set-default
     
-    检测Java 8是否安装成功
+检测Java 8是否安装成功
 
    $ java -version
 
