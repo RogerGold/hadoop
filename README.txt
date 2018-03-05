@@ -1,3 +1,13 @@
+## 目录
+
+[hadoop基础](https://github.com/RogerGold/hadoop/blob/master/Hadoop_basic_0.md)
+
+[HDFS](https://github.com/RogerGold/hadoop/blob/master/The%20Hadoop%20Distributed%20File%20System.md)
+
+[WordCount实例](https://github.com/RogerGold/hadoop/blob/master/Hadoop_WordCount.md)
+
+## Git
+
 1.安装和配置用户信息
 用户信息
 当安装完 Git 应该做的第一件事就是设置你的用户名称与邮件地址。 这样做很重要，因为每一个 Git 的提交都会使用这些信息，并且它会写入到你的每一次提交中，不可更改：
