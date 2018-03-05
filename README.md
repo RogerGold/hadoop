@@ -12,35 +12,36 @@
 用户信息
 当安装完 Git 应该做的第一件事就是设置你的用户名称与邮件地址。 这样做很重要，因为每一个 Git 的提交都会使用这些信息，并且它会写入到你的每一次提交中，不可更改：
 
-$ git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com
+    $ git config --global user.name "John Doe"
+    $ git config --global user.email johndoe@example.com
 
 你可以通过输入 git config <key>： 来检查 Git 的某一项配置
 
-$ git config user.name
-John Doe
+    $ git config user.name
+    John Doe
 
 检查配置信息
 如果想要检查你的配置，可以使用 git config --list 命令来列出所有 Git 当时能找到的配置。
 
 在现有目录中初始化仓库
 如果你打算使用 Git 来对现有的项目进行管理，你只需要进入该项目目录并输入：
-$ git init
+
+    $ git init
 
 
 2.新建README.txt
-…or create a new repository on the command line
+    …or create a new repository on the command line
 
-echo "# hadoop" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/RogerGold/hadoop.git
-git push -u origin master
-…or push an existing repository from the command line
+    echo "# hadoop" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin https://github.com/RogerGold/hadoop.git
+    git push -u origin master
+    …or push an existing repository from the command line
 
-git remote add origin https://github.com/RogerGold/hadoop.git
-git push -u origin master
+    git remote add origin https://github.com/RogerGold/hadoop.git
+    git push -u origin master
 
 
 3.常用命令
@@ -54,9 +55,10 @@ git push -u origin master
 撤消操作
 你提交后发现忘记了暂存某些需要的修改，可以像下面这样操作：
 
-$ git commit -m 'initial commit'
-$ git add forgotten_file
-$ git commit --amend
+    $ git commit -m 'initial commit'
+    $ git add forgotten_file
+    $ git commit --amend
+    
 最终你只会有一个提交 - 第二次提交将代替第一次提交的结果。
 
 从远程仓库中抓取与拉取
