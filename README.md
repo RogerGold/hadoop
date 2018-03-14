@@ -64,3 +64,5 @@
 从远程仓库中抓取与拉取
 如果想查看你已经配置的远程仓库服务器，可以运行 git remote 命令。 它会列出你指定的每一个远程服务器的简写。
 运行 git pull [remote-name]通常会从最初克隆的服务器上抓取数据并自动尝试合并到当前所在的分支。
+
+ref:[git book](https://git-scm.com/book/zh/v2)
